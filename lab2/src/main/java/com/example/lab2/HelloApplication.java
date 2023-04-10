@@ -147,6 +147,7 @@ public class HelloApplication extends Application {
         r.delete();
 
     }
+
     public static ArrayList<String> getParamsToChange(int index){
         Soldier r = herd.get(index);
         ArrayList<String> arr = new ArrayList<>();
@@ -220,16 +221,6 @@ public class HelloApplication extends Application {
 
             }
         });
-        //Управління
-        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent keyEvent) {
-                unit_control.Catch(keyEvent.getCode());
-
-            }
-        });
-//------------------------------------------------------------------------------------------------------
-
 //------------------------------------------------------------------------------------------------------
 
         stage.setScene(scene);
